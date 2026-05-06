@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Introduce un título para tu sitio web:</h1>
+<input type="text" id="input1" placeholder="Título del sitio...">
+<button onclick="saveOne()">Próximo</button>
+
+<script>
+    function saveOne() {
+        const val = document.getElementById('input1').value;
+        localStorage.setItem('firstItem', val);
+        window.location.href = 'es/dspl1.html';
+    }
+</script>

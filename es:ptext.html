@@ -1,0 +1,11 @@
+<h1>Introduce el texto del párrafo:</h1>
+<input type="text" id="input2" placeholder="Texto del párrafo...">
+<button onclick="saveTwo()">Generar Código</button>
+
+<script>
+    function saveTwo() {
+        const val = document.getElementById('input2').value;
+        localStorage.setItem('secondItem', val);
+        window.location.href = 'es/finish.html';
+    }
+</script>
