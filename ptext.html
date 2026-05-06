@@ -1,0 +1,11 @@
+<h1>Enter Paragraph Text:</h1>
+<input type="text" id="input2" placeholder="Paragraph text...">
+<button onclick="saveTwo()">Generate Code</button>
+
+<script>
+    function saveTwo() {
+        const val = document.getElementById('input2').value;
+        localStorage.setItem('secondItem', val);
+        window.location.href = 'finish.html';
+    }
+</script>

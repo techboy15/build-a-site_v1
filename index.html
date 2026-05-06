@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Enter a title for your site:</h1>
+<input type="text" id="input1" placeholder="Site title...">
+<button onclick="saveOne()">Next</button>
+
+<script>
+    function saveOne() {
+        const val = document.getElementById('input1').value;
+        localStorage.setItem('firstItem', val);
+        window.location.href = 'dspl1.html';
+    }
+</script>
+
